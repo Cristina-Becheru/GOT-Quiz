@@ -1,16 +1,10 @@
 /* General variables */
 document.addEventListener("DOMContentLoaded", function () {
-    const questionNumberElement = document.querySelector("#quiz-questions");
-    const imageContainer = document.getElementById("image");
-    const tryAgainContainer = document.getElementById("try-again-container");
-    const tryAgainButton = document.getElementById("try-again");
-    const answerButtons = document.querySelectorAll(".submit-answer");
-});
-let questionNumber = 0;
-let totalCorrect = 0;
-let optionFinal = 0;
+    let questionNumber = 0;
+    let totalCorrect = 0;
+    let optionFinal = 0;
 
-const allQuestions = [
+    const allQuestions = [
     {
         question: "How many swords make up the Iron Throne?",
         choices: ["500", "1000", "2000", "5000"],
@@ -63,3 +57,25 @@ const allQuestions = [
         correctAnswer: "Drogon"
     }
 ];
+    const result = [
+        // Result for more than 70% correct
+        {
+
+            comment: " Well done! You really know Game of Thrones!"
+        },
+        // Result for scores between 20% and 70% correct
+        {
+
+            comment: " Not bad. You've got some Game of Thrones knowledge!"
+        },
+        // Result for less than 20% correct
+        {
+
+            comment: "You know nothing Jon Snow! You might need to rewatch Game of Thrones!"
+        },
+        // Default result (if the score doesn't fall into the above categories)
+        {
+
+            comment: "Dracarys."
+        }
+    ];
