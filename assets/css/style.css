@@ -1,0 +1,11 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville&family=Reenie+Beanie&display=swap');
+/* Wildcard selector to remove default styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* General styles */
+body {
+    min-height: 100vh;
+    text-align: center; }
