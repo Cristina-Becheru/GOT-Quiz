@@ -8,53 +8,53 @@ document.addEventListener("DOMContentLoaded", function () {
     {
         question: "How many swords make up the Iron Throne?",
         choices: ["500", "1000", "2000", "5000"],
-        correctAnswer: "1000",
+        answer: 2
     },
 
     {
         question: "What does Valar Morghulis mean?",
         choices: ["All men must die", "What is dead may never die", "Never say never", "All men must first live"],
-        correctAnswer: "All men must die"
+        answer: 1
     },
     {
         question: "What House rules the Kingdom of the North?",
         choices: ["Tully", "Tyrell", "Stark", "Martell"],
-        correctAnswer: "Stark"
+        answer: 3
     }
     , {
         question: "What is Jon Snow's real name?",
         choices: ["Jon", "Aerys", "Aegon", "Rhaegar"],
-        correctAnswer: "Aegon"
+        answer: 3
     }
     , {
         question: "On which continent are the Seven Kingdoms located?",
         choices: ["Essos", "Westeros", "Hyboria", "Valyria"],
-        correctAnswer: "Westeros"
+        answer: 2
     }
     , {
         question: "What is the name of Arya's direwolf?",
         choices: ["Nymeria", "Lady", "Ghost", "Grey Wind"],
-        correctAnswer: "Nymeria"
+        answer: 1
     }
     , {
         question: "Who betrays Robb Stark at the Red Wedding?",
         choices: ["Randyll Tarlly", "Balon Greyjoy", "Walder Frey", "Hoster Tully"],
-        correctAnswer: "Walder Frey"
+        answer: 3
     }
     , {
         question: "How many seasons of the Game of Thrones series are there?",
         choices: ["Four", "Five", "Seven", "Eight"],
-        correctAnswer: "Eight"
+        answer: 4
     }
     , {
         question: "HBO's Game of Thrones is adapted from what series of novels?",
         choices: ["A song of ice and fire", "Earthsea", "The broken empire", "The kingkiller chronicle"],
-        correctAnswer: "A song of ice and fire"
+        answer: 1
     }
     , {
         question: "What is the name of the last surviving dragon in Game of Thrones?",
         choices: ["Drogon", "Rhaegal", "Viserion", "Tatsu"],
-        correctAnswer: "Drogon"
+        answer: 1
     }
 ];
     const result = [
@@ -78,4 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             comment: "Dracarys."
         }
-    ];
+    ]});
+    //Function for next question
+    function start() {
+    fadeIn(document.getElementById('quiz-questions'), 200);
+
+    if (questionNumber !== allQuestions.length) {
+        question(questionNumber);
+    } else {
+        end();
+    }
+}
