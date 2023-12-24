@@ -11,8 +11,8 @@
 body {
     min-height: 100vh;
     text-align: center;
-    background:url(/assets/images/secondpage.jpg) no-repeat center center;
-    background-size:cover;
+    background: url(/assets/images/secondpage.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 /* Styles for quiz landing page */
@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .playButton {
     display: inline-block;
     padding: 20px 15px;
@@ -37,9 +38,11 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
+
 .playButton:hover {
     background-color: #f5b505;
 }
+
 /* Styles for quiz main page */
 h1 {
     color: black;
@@ -52,6 +55,7 @@ h2 {
     font-size: 25px;
     font-weight: bold;
 }
+
 .quiz-container {
     max-width: 600px;
     margin: 20px auto;
@@ -68,4 +72,27 @@ h2 {
 
 .question-container {
     text-align: center;
+}
+
+#try-again-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#try-again {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f5b505;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answer-options {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
