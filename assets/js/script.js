@@ -8,53 +8,53 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "How many swords make up the Iron Throne?",
             choices: ["500", "1000", "2000", "5000"],
-            answer: 2
+            answer: 1
         },
 
         {
             question: "What does Valar Morghulis mean?",
             choices: ["All men must die", "What is dead may never die", "Never say never", "All men must first live"],
-            answer: 1
+            answer: 0
         },
         {
             question: "What House rules the Kingdom of the North?",
             choices: ["Tully", "Tyrell", "Stark", "Martell"],
-            answer: 3
+            answer: 2
         }
         , {
             question: "What is Jon Snow's real name?",
             choices: ["Jon", "Aerys", "Aegon", "Rhaegar"],
-            answer: 3
+            answer: 2
         }
         , {
             question: "On which continent are the Seven Kingdoms located?",
             choices: ["Essos", "Westeros", "Hyboria", "Valyria"],
-            answer: 2
+            answer: 1
         }
         , {
             question: "What is the name of Arya's direwolf?",
             choices: ["Nymeria", "Lady", "Ghost", "Grey Wind"],
-            answer: 1
+            answer: 0
         }
         , {
             question: "Who betrays Robb Stark at the Red Wedding?",
             choices: ["Randyll Tarlly", "Balon Greyjoy", "Walder Frey", "Hoster Tully"],
-            answer: 3
+            answer: 2
         }
         , {
             question: "How many seasons of the Game of Thrones series are there?",
             choices: ["Four", "Five", "Seven", "Eight"],
-            answer: 4
+            answer: 3
         }
         , {
             question: "HBO's Game of Thrones is adapted from what series of novels?",
             choices: ["A song of ice and fire", "Earthsea", "The broken empire", "The kingkiller chronicle"],
-            answer: 1
+            answer: 0
         }
         , {
             question: "What is the name of the last surviving dragon in Game of Thrones?",
             choices: ["Drogon", "Rhaegal", "Viserion", "Tatsu"],
-            answer: 1
+            answer: 0
         }
     ];
     const result = [
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Result for less than 20% correct
         {
 
-            comment: "You know nothing Jon Snow! You might need to rewatch Game of Thrones!"
+            comment: "You know nothing Jon Snow!"
         },
         // Default result (if the score doesn't fall into the above categories)
         {

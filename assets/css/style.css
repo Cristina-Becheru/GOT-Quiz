@@ -96,3 +96,32 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
 }
+.submit-answer {
+    width: 280px;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: rgba(128, 128, 128, 0.64);
+    color: rgb(245, 245, 245);
+    font-family: 'Reenie Beanie', cursive;
+    border-radius: 800px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submit-answer {
+    cursor: pointer;
+}
+
+.submit-answer:hover {
+    opacity: .8;
+    background-color: #121010;
+}
+.correctStyle {
+    background-color: #2ecc71;
+}
+
+.incorrectStyle {
+    background-color: #e74c3c;
+}
