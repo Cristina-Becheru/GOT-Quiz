@@ -1,11 +1,40 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville&family=Reenie+Beanie&display=swap');
+
 /* Wildcard selector to remove default styles */
 * {
     padding: 0;
     margin: 0;
 }
+
 /* General styles */
 body {
     min-height: 100vh;
-    text-align: center; }
+    text-align: center;
+}
+
+/* Styles for quiz landing page */
+.container {
+    background: url(/assets/images/backgroundchoice.jpg)no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.playButton {
+    display: inline-block;
+    padding: 20px 15px;
+    border-radius: 2px;
+    margin-top: 20px;
+    background-color: #ebb40f00;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+.playButton:hover {
+    background-color: #f5b505;
+}
