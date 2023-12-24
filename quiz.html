@@ -16,24 +16,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>GAME OF THRONES</h1>
-</header>
 <!--Main section of the quiz-->
-<main>
-    <h2 id="quiz-questions">Questions</h2>
-    <p id="image"></p>
+<div class="quiz-container">
+    <div class="header">
+        <h1>GAME OF THRONES</h1>
+    </div>
+
+    <div class="question-container">
+        <h2 id="quiz-questions"></h2>
+        <p id="image"></p>
+    </div>
+
     <div id="try-again-container" style="display:none;">
         <button id="try-again">Try Again</button>
     </div>
 
-    <ul>
+    <ul class="answer-options">
         <li><button class="submit-answer" id="0"></button></li>
         <li><button class="submit-answer" id="1"></button></li>
         <li><button class="submit-answer" id="2"></button></li>
         <li><button class="submit-answer" id="3"></button></li>
     </ul>
-</main>
+</div>
 
     <script src="quiz.js"></script>
 </body>
