@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             comment: "Dracarys."
         }
     ]});
-    //Function for next question
+    //Function for next questions
     function start() {
     fadeIn(document.getElementById('quiz-questions'), 200);
 
@@ -87,5 +87,82 @@ document.addEventListener("DOMContentLoaded", function () {
         question(questionNumber);
     } else {
         end();
+    }
+}
+// Helper function to fade in an element
+
+function fadeIn(element, duration) {
+    let opacity = 0;
+    const interval = 10;
+    const increment = interval / duration;
+
+    const fadeEffect = setInterval(function () {
+        if (opacity < 1) {
+            opacity += increment;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, interval);
+}
+
+function question(questionNum) {
+    const h2Element = document.getElementById('quiz-questions');
+    const choicesElements = document.querySelectorAll('.submit-answer');
+
+    h2Element.textContent = allQuestions[questionNum].question;
+
+    allQuestions[questionNum].choices.forEach(function (answers, i) {
+        choicesElements[i].innerHTML = answers;
+    });
+}
+
+function end() {
+    finalImage();
+    document.querySelector("ul").style.display = "none";
+    document.getElementById("quiz-questions").textContent =
+        "You scored " +
+        totalCorrect +
+        " out of " +
+        allQuestions.length +
+        ". " +
+        result[optionFinal].comment;
+    document.getElementById("try-again-container").style.display = "block";
+    restart();
+}
+// result according to correct answers
+function finalImage() {
+    if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
+        optionFinal = 1;
+    } else if (
+        totalCorrect <= allQuestions.length * 0.6 &&
+        totalCorrect >= allQuestions.length * 0.2
+    ) {
+        optionFinal = 2;
+    } else if (totalCorrect !== allQuestions.length) {
+        optionFinal = 3;
+    }
+}
+
+function restart() {
+    document.getElementById("try-again").addEventListener("click", function () {
+        questionNumber = 0;
+        totalCorrect = 0;
+        optionFinal = 0;
+
+        start();
+        document.getElementById("try-again-container").style.display = "none";
+        document.querySelector("ul").style.display = "block";
+    });
+}
+
+function answerCheck(userAnswer) {
+    var correctAnswer = allQuestions[questionNumber].answer;
+
+    if (userAnswer === correctAnswer) {
+        document.getElementById(userAnswer).classList.add("correctStyle");
+        totalCorrect++;
+    } else {
+        document.getElementById(userAnswer).classList.add("incorrectStyle");
     }
 }
