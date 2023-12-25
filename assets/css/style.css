@@ -11,13 +11,13 @@
 body {
     min-height: 100vh;
     text-align: center;
-    background: url(/assets/images/secondpage.jpg) no-repeat center center;
+    background: url(../images/secondpage.jpg) no-repeat center center;
     background-size: cover;
 }
 
 /* Styles for quiz landing page */
 .container {
-    background: url(/assets/images/backgroundchoice.jpg) no-repeat center center;
+    background: url(..//images/backgroundchoice.jpg) no-repeat center center;
     background-size: cover;
     min-height: 100vh;
     display: flex;
