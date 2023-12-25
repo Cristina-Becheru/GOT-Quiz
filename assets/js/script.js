@@ -25,32 +25,32 @@ document.addEventListener("DOMContentLoaded", function () {
             question: "What is Jon Snow's real name?",
             choices: ["Jon", "Aerys", "Aegon", "Rhaegar"],
             answer: 2
-        }, 
+        },
         {
             question: "On which continent are the Seven Kingdoms located?",
             choices: ["Essos", "Westeros", "Hyboria", "Valyria"],
             answer: 1
         },
-         {
+        {
             question: "What is the name of Arya's direwolf?",
             choices: ["Nymeria", "Lady", "Ghost", "Grey Wind"],
             answer: 0
         },
-         {
+        {
             question: "Who betrays Robb Stark at the Red Wedding?",
             choices: ["Randyll Tarlly", "Balon Greyjoy", "Walder Frey", "Hoster Tully"],
             answer: 2
-        }, 
+        },
         {
             question: "How many seasons of the Game of Thrones series are there?",
             choices: ["Four", "Five", "Seven", "Eight"],
             answer: 3
-        }, 
+        },
         {
             question: "HBO's Game of Thrones is adapted from what series of novels?",
             choices: ["A song of ice and fire", "Earthsea", "The broken empire", "The kingkiller chronicle"],
             answer: 0
-        }, 
+        },
         {
             question: "What is the name of the last surviving dragon in Game of Thrones?",
             choices: ["Drogon", "Rhaegal", "Viserion", "Tatsu"],
@@ -80,111 +80,111 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-//Function for next questions
-function start() {
-    fadeIn(document.getElementById('quiz-questions'), 200);
+    //Function for next questions
+    function start() {
+        fadeIn(document.getElementById('quiz-questions'), 200);
 
-    if (questionNumber !== allQuestions.length) {
-        question(questionNumber);
-    } else {
-        end();
-    }
-}
-// Helper function to fade in an element
-
-function fadeIn(element, duration) {
-    let opacity = 0;
-    const interval = 10;
-    const increment = interval / duration;
-
-    const fadeEffect = setInterval(function () {
-        if (opacity < 1) {
-            opacity += increment;
-            element.style.opacity = opacity;
+        if (questionNumber !== allQuestions.length) {
+            question(questionNumber);
         } else {
-            clearInterval(fadeEffect);
+            end();
         }
-    }, interval);
-}
-
-function question(questionNum) {
-    const h2Element = document.getElementById('quiz-questions');
-    const choicesElements = document.querySelectorAll('.submit-answer');
-
-    h2Element.textContent = allQuestions[questionNum].question;
-
-    allQuestions[questionNum].choices.forEach(function (answers, i) {
-        choicesElements[i].innerHTML = answers;
-    });
-}
-
-function end() {
-    finalImage();
-    document.querySelector("ul").style.display = "none";
-    document.getElementById("quiz-questions").textContent =
-        "You scored " +
-        totalCorrect +
-        " out of " +
-        allQuestions.length +
-        ". " +
-        result[optionFinal].comment;
-
-    document.getElementById("play-again-container").style.display = "block";
-    restart();
-}
-// result according to correct answers
-function finalImage() {
-    if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
-        optionFinal = 1;
-    } else if (
-        totalCorrect <= allQuestions.length * 0.6 &&
-        totalCorrect >= allQuestions.length * 0.2
-    ) {
-        optionFinal = 2;
-    } else if (totalCorrect !== allQuestions.length) {
-        optionFinal = 3;
     }
-}
+    // Helper function to fade in an element
 
-function restart() {
-    document.getElementById("play-again").addEventListener("click", function () {
-        questionNumber = 0;
-        totalCorrect = 0;
-        optionFinal = 0;
+    function fadeIn(element, duration) {
+        let opacity = 0;
+        const interval = 10;
+        const increment = interval / duration;
 
-        start();
-        document.getElementById("play-again-container").style.display = "none";
-        document.querySelector("ul").style.display = "block";
-    });
-}
-
-function answerCheck(userAnswer) {
-    var correctAnswer = allQuestions[questionNumber].answer;
-
-    if (userAnswer === correctAnswer) {
-        document.getElementById(userAnswer).classList.add("correctStyle");
-        totalCorrect++;
-    } else {
-        document.getElementById(userAnswer).classList.add("incorrectStyle");
+        const fadeEffect = setInterval(function () {
+            if (opacity < 1) {
+                opacity += increment;
+                element.style.opacity = opacity;
+            } else {
+                clearInterval(fadeEffect);
+            }
+        }, interval);
     }
-}
-// Event listener for answer buttons
-document.querySelectorAll('.submit-answer').forEach(function (button) {
-    button.addEventListener("click", function (event) {
-        var userAnswer = parseInt(event.target.id);
-        answerCheck(userAnswer);
 
-        setTimeout(function () {
-            document.querySelectorAll(".submit-answer").forEach(function (btn) {
-                btn.classList.remove("correctStyle", "incorrectStyle");
-            });
+    function question(questionNum) {
+        const h2Element = document.getElementById('quiz-questions');
+        const choicesElements = document.querySelectorAll('.submit-answer');
+
+        h2Element.textContent = allQuestions[questionNum].question;
+
+        allQuestions[questionNum].choices.forEach(function (answers, i) {
+            choicesElements[i].innerHTML = answers;
+        });
+    }
+
+    function end() {
+        finalImage();
+        document.querySelector("ul").style.display = "none";
+        document.getElementById("quiz-questions").textContent =
+            "You scored " +
+            totalCorrect +
+            " out of " +
+            allQuestions.length +
+            ". " +
+            result[optionFinal].comment;
+
+        document.getElementById("play-again-container").style.display = "block";
+        restart();
+    }
+    // result according to correct answers
+    function finalImage() {
+        if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
+            optionFinal = 1;
+        } else if (
+            totalCorrect <= allQuestions.length * 0.6 &&
+            totalCorrect >= allQuestions.length * 0.2
+        ) {
+            optionFinal = 2;
+        } else if (totalCorrect !== allQuestions.length) {
+            optionFinal = 3;
+        }
+    }
+
+    function restart() {
+        document.getElementById("play-again").addEventListener("click", function () {
+            questionNumber = 0;
+            totalCorrect = 0;
+            optionFinal = 0;
+
             start();
-        }, 1500);
+            document.getElementById("play-again-container").style.display = "none";
+            document.querySelector("ul").style.display = "block";
+        });
+    }
 
-        questionNumber++;
+    function answerCheck(userAnswer) {
+        var correctAnswer = allQuestions[questionNumber].answer;
+
+        if (userAnswer === correctAnswer) {
+            document.getElementById(userAnswer).classList.add("correctStyle");
+            totalCorrect++;
+        } else {
+            document.getElementById(userAnswer).classList.add("incorrectStyle");
+        }
+    }
+    // Event listener for answer buttons
+    document.querySelectorAll('.submit-answer').forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            var userAnswer = parseInt(event.target.id);
+            answerCheck(userAnswer);
+
+            setTimeout(function () {
+                document.querySelectorAll(".submit-answer").forEach(function (btn) {
+                    btn.classList.remove("correctStyle", "incorrectStyle");
+                });
+                start();
+            }, 1500);
+
+            questionNumber++;
+        });
     });
+
+    // Start the quiz
+    start();
 });
-
-// Start the quiz
-start();
-    });

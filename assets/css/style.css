@@ -46,20 +46,28 @@ body {
 /* Styles for quiz main page */
 h1 {
     color: black;
-    font-family: 'Libre Baskerville', serif;
-}
-
-h2 {
-    color: rgb(209, 44, 44);
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
     font-weight: bold;
 }
 
+h2 {
+    color: rgb(255, 247, 247);
+    font-family: 'Libre Baskerville',serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+h3 {
+    color: black;
+    font-family: 'Reenie Beanie',cursive;
+    font-size: 50px;
+    font-weight: bold;
+
+}
 .quiz-container {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #ffffff2d;
+    background-color: #ffffff45;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -72,6 +80,7 @@ h2 {
 
 .question-container {
     text-align: center;
+    
 }
 
 #play-again-container {
@@ -95,19 +104,20 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 .submit-answer {
     width: 280px;
     margin: 10px 0;
     padding: 10px 0;
     background-color: rgba(128, 128, 128, 0.64);
-    color: rgb(162, 32, 32);
-    font-family: 'Reenie Beanie', cursive;
+    color: #fdfdfd;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 800px;
     outline: none;
     border: none;
-    font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
 }
 
