@@ -16,23 +16,30 @@ body {
 }
 
 /* Styles for quiz landing page */
-#menu {
-    list-style-type: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    background-color: #ebb40f00;
+.topnav a {
+    float: inline-end;
+    display: block;
+    text-decoration: none;
+    padding: 20px 15px;
     font-family: 'Reenie Beanie', cursive;
     font-weight: bold;
     font-size: 22px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
-#menu a:hover {
+.topnav a:hover {
     background-color: #f5b505;
+    
 }
 
-#menu>nav{
-    background-color: #f5b505;
+.topnav a.active {
+    color: white;
 }
+
+
 .container {
     background: url(..//images/backgroundchoice.jpg) no-repeat center center;
     background-size: cover;
@@ -48,7 +55,7 @@ body {
     padding: 20px 15px;
     border-radius: 2px;
     margin-top: 20px;
-    background-color: #ebb40f00;
+    background-color: #ebb40fc6;
     color: #fff;
     text-decoration: none;
     font-family: 'Reenie Beanie', cursive;
