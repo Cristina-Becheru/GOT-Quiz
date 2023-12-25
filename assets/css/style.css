@@ -16,6 +16,23 @@ body {
 }
 
 /* Styles for quiz landing page */
+#menu {
+    list-style-type: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #ebb40f00;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#menu a:hover {
+    background-color: #f5b505;
+}
+
+#menu>nav{
+    background-color: #f5b505;
+}
 .container {
     background: url(..//images/backgroundchoice.jpg) no-repeat center center;
     background-size: cover;
@@ -52,20 +69,42 @@ h1 {
 }
 
 h2 {
-    color: rgb(152, 0, 0);
+    color: rgb(109, 29, 29);
     font-family: 'Libre Baskerville', serif;
     font-size: 26px;
     font-weight: bold;
 }
 
 h3 {
-    color: rgb(196, 8, 8);
+    color: rgb(133, 31, 31);
     font-family: 'Reenie Beanie', cursive;
     font-size: 50px;
     font-weight: bold;
 
 }
+nav {
+    background-color: #333;
+}
 
+nav a {
+    float: inline-start;
+    display: block;
+    color: rgb(133, 31, 31);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Reenie Beanie',
+        cursive;
+}
+
+nav a:hover {
+    background-color: rgb(109, 29, 29);
+    color: black;
+}
 .quiz-container {
     max-width: 500px;
     margin: 20px auto;
