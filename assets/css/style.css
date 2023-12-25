@@ -52,22 +52,24 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 247, 247);
-    font-family: 'Libre Baskerville',serif;
-    font-size: 25px;
+    color: rgb(196, 8, 8);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 26px;
     font-weight: bold;
 }
+
 h3 {
-    color: black;
-    font-family: 'Reenie Beanie',cursive;
+    color: rgb(196, 8, 8);
+    font-family: 'Reenie Beanie', cursive;
     font-size: 50px;
     font-weight: bold;
 
 }
+
 .quiz-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 20px auto;
-    background-color: #ffffff45;
+    background-color: #ffffff43;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -80,7 +82,7 @@ h3 {
 
 .question-container {
     text-align: center;
-    
+
 }
 
 #play-again-container {
@@ -89,13 +91,15 @@ h3 {
 }
 
 #play-again {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 20px;
     background-color: #f5b505;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: bold;
+    font-size: 21px;
 }
 
 .answer-options {
@@ -104,14 +108,15 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
+
 .submit-answer {
     width: 280px;
     margin: 10px 0;
     padding: 10px 0;
-    background-color: rgba(128, 128, 128, 0.64);
-    color: #fdfdfd;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #121111;
     font-family: 'Bree Serif', serif;
     font-size: 20px;
     font-weight: bold;
@@ -123,14 +128,15 @@ h3 {
 
 .submit-answer:hover {
     opacity: .8;
-    background-color: #121010;
+    background-color: #ffffff;
 }
+
 .correctStyle {
-    background-color: #2ecc71;
+    background-color: #17e46c;
 }
 
 .incorrectStyle {
-    background-color: #e74c3c;
+    background-color: #f0230c;
 }
 
 /* Adding responsiveness to the play button */
