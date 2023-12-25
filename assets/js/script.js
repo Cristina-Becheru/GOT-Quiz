@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
             question: "What House rules the Kingdom of the North?",
             choices: ["Tully", "Tyrell", "Stark", "Martell"],
             answer: 2
-        }
-        , {
+        },
+        {
             question: "What is Jon Snow's real name?",
             choices: ["Jon", "Aerys", "Aegon", "Rhaegar"],
             answer: 2
@@ -73,11 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             comment: "You know nothing Jon Snow!"
         },
-        // Default result (if the score doesn't fall into the above categories)
-        {
-
-            comment: "Dracarys."
-        }
     ];
 
     //Function for next questions
@@ -120,13 +115,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function end() {
         document.querySelector("ul").style.display = "none";
-        document.getElementById("quiz-questions").textContent =
-            "You scored " +
-            totalCorrect +
-            " out of " +
-            allQuestions.length +
-            ". " +
-            result[optionFinal].comment;
+        const scoreText = `You Scored ${totalCorrect} out of ${allQuestions.length}.`;
+        let resultText;
+
+        if (totalCorrect >= 7) {
+            resultText = scoreText + result[0].comment;
+        }
+        if (totalCorrect >= 2) {
+            resultText = scoreText + result[1].comment;
+        }
+        if (totalCorrect <= 2) {
+            resultText = scoreText + result[2].comment;
+        }
+        console.log(totalCorrect, resultText);
+        document.getElementById("quiz-questions").textContent = resultText;
 
         document.getElementById("play-again-container").style.display = "block";
         restart();
@@ -142,19 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("play-again-container").style.display = "none";
             document.querySelector("ul").style.display = "block";
         });
-    }
-    // result according to correct answers
-    function finalScore() {
-        if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
-            optionFinal = 1;
-        } else if (
-            totalCorrect <= allQuestions.length * 0.6 &&
-            totalCorrect >= allQuestions.length * 0.2
-        ) {
-            optionFinal = 2;
-        } else if (totalCorrect !== allQuestions.length) {
-            optionFinal = 3;
-        }
     }
 
     function answerCheck(userAnswer) {
