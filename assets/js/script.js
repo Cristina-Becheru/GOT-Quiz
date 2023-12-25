@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function end() {
-        finalImage();
         document.querySelector("ul").style.display = "none";
         document.getElementById("quiz-questions").textContent =
             "You scored " +
@@ -132,19 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("play-again-container").style.display = "block";
         restart();
     }
-    // result according to correct answers
-    function finalImage() {
-        if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
-            optionFinal = 1;
-        } else if (
-            totalCorrect <= allQuestions.length * 0.6 &&
-            totalCorrect >= allQuestions.length * 0.2
-        ) {
-            optionFinal = 2;
-        } else if (totalCorrect !== allQuestions.length) {
-            optionFinal = 3;
-        }
-    }
 
     function restart() {
         document.getElementById("play-again").addEventListener("click", function () {
@@ -156,6 +142,19 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("play-again-container").style.display = "none";
             document.querySelector("ul").style.display = "block";
         });
+    }
+    // result according to correct answers
+    function finalScore() {
+        if (totalCorrect < allQuestions.length && totalCorrect >= allQuestions.length * 0.7) {
+            optionFinal = 1;
+        } else if (
+            totalCorrect <= allQuestions.length * 0.6 &&
+            totalCorrect >= allQuestions.length * 0.2
+        ) {
+            optionFinal = 2;
+        } else if (totalCorrect !== allQuestions.length) {
+            optionFinal = 3;
+        }
     }
 
     function answerCheck(userAnswer) {
