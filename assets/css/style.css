@@ -74,12 +74,12 @@ h2 {
     text-align: center;
 }
 
-#try-again-container {
+#play-again-container {
     text-align: center;
     margin-top: 20px;
 }
 
-#try-again {
+#play-again {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #f5b505;
@@ -101,16 +101,13 @@ h2 {
     margin: 10px 0;
     padding: 10px 0;
     background-color: rgba(128, 128, 128, 0.64);
-    color: rgb(245, 245, 245);
+    color: rgb(162, 32, 32);
     font-family: 'Reenie Beanie', cursive;
     border-radius: 800px;
     outline: none;
     border: none;
     font-size: 20px;
     font-weight: bold;
-}
-
-.submit-answer {
     cursor: pointer;
 }
 
@@ -124,4 +121,20 @@ h2 {
 
 .incorrectStyle {
     background-color: #e74c3c;
+}
+
+/* Adding responsiveness to the play button */
+
+@media (max-width: 768px) {
+    .playButton {
+        padding: 10px 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .playButton {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
 }

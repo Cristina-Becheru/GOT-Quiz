@@ -25,33 +25,33 @@ document.addEventListener("DOMContentLoaded", function () {
             question: "What is Jon Snow's real name?",
             choices: ["Jon", "Aerys", "Aegon", "Rhaegar"],
             answer: 2
-        }
-        , {
+        }, 
+        {
             question: "On which continent are the Seven Kingdoms located?",
             choices: ["Essos", "Westeros", "Hyboria", "Valyria"],
             answer: 1
-        }
-        , {
+        },
+         {
             question: "What is the name of Arya's direwolf?",
             choices: ["Nymeria", "Lady", "Ghost", "Grey Wind"],
             answer: 0
-        }
-        , {
+        },
+         {
             question: "Who betrays Robb Stark at the Red Wedding?",
             choices: ["Randyll Tarlly", "Balon Greyjoy", "Walder Frey", "Hoster Tully"],
             answer: 2
-        }
-        , {
+        }, 
+        {
             question: "How many seasons of the Game of Thrones series are there?",
             choices: ["Four", "Five", "Seven", "Eight"],
             answer: 3
-        }
-        , {
+        }, 
+        {
             question: "HBO's Game of Thrones is adapted from what series of novels?",
             choices: ["A song of ice and fire", "Earthsea", "The broken empire", "The kingkiller chronicle"],
             answer: 0
-        }
-        , {
+        }, 
+        {
             question: "What is the name of the last surviving dragon in Game of Thrones?",
             choices: ["Drogon", "Rhaegal", "Viserion", "Tatsu"],
             answer: 0
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             comment: "Dracarys."
         }
     ];
-});
+
 //Function for next questions
 function start() {
     fadeIn(document.getElementById('quiz-questions'), 200);
@@ -128,7 +128,8 @@ function end() {
         allQuestions.length +
         ". " +
         result[optionFinal].comment;
-    document.getElementById("try-again-container").style.display = "block";
+
+    document.getElementById("play-again-container").style.display = "block";
     restart();
 }
 // result according to correct answers
@@ -146,13 +147,13 @@ function finalImage() {
 }
 
 function restart() {
-    document.getElementById("try-again").addEventListener("click", function () {
+    document.getElementById("play-again").addEventListener("click", function () {
         questionNumber = 0;
         totalCorrect = 0;
         optionFinal = 0;
 
         start();
-        document.getElementById("try-again-container").style.display = "none";
+        document.getElementById("play-again-container").style.display = "none";
         document.querySelector("ul").style.display = "block";
     });
 }
@@ -186,3 +187,4 @@ document.querySelectorAll('.submit-answer').forEach(function (button) {
 
 // Start the quiz
 start();
+    });
