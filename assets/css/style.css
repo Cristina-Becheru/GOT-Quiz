@@ -15,25 +15,18 @@ body {
     background-size: cover;
 }
 
+.how-to-play-image {
+    min-height: 100vh;
+    text-align: center;
+    background: url(../images/howtoplaypicture.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 /* Styles for quiz landing page */
-
-.topnav a {
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.topnav a:hover {
-    background-color: #f5b505;
-
-}
-
-.topnav a.active {
-    color: white;
-}
 
 
 .container {
-    background: url(..//images/backgroundchoice.jpg) no-repeat center center;
+    background: url(../images/backgroundchoice.jpg) no-repeat center center;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -207,7 +200,7 @@ nav a:hover {
 }
 
 .social-networks a {
-    color: rgb(133, 31, 31);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     margin-right: 15px;
 }
@@ -226,4 +219,8 @@ nav a:hover {
         padding: 8px 10px;
         font-size: 16px;
     }
+}
+
+.heading-link {
+    text-decoration: none;
 }
