@@ -32,15 +32,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 
 .playButton {
     display: inline-block;
-    padding: 20px 15px;
+    padding: 5px 10px;
     border-radius: 2px;
-    margin-top: 20px;
-    background-color: #ebb40fc6;
+    margin-top: 5px;
+    background-color: #f9c31ff1;
     color: #fff;
     text-decoration: none;
     font-family: 'Reenie Beanie', cursive;
@@ -49,10 +50,14 @@ body {
 }
 
 .playButton:hover {
-    background-color: #f5b505;
+    background-color: #0b0b0875;
 }
 
 /* Styles for quiz main page */
+.heading-link {
+    text-decoration: none;
+}
+
 h1 {
     color: black;
     font-family: 'Bree Serif', serif;
@@ -136,6 +141,7 @@ nav a:hover {
 #play-again-container {
     text-align: center;
     margin-top: 20px;
+    display: none;
 }
 
 #play-again {
@@ -172,11 +178,6 @@ nav a:hover {
     outline: none;
     border: none;
     cursor: pointer;
-}
-
-.submit-answer:hover {
-    opacity: .8;
-    background-color: #ffffff;
 }
 
 .correctStyle {
@@ -219,8 +220,4 @@ nav a:hover {
         padding: 8px 10px;
         font-size: 16px;
     }
-}
-
-.heading-link {
-    text-decoration: none;
 }
