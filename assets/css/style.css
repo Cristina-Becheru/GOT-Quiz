@@ -16,17 +16,9 @@ body {
 }
 
 /* Styles for quiz landing page */
-.topnav {
-    float: left;
-}
 
 .topnav a {
     text-decoration: none;
-    padding: 20px 15px;
-    font-family: 'Reenie Beanie', cursive;
-    font-weight: bold;
-    font-size: 22px;
-    border-radius: 2px;
     text-transform: uppercase;
 }
 
