@@ -16,23 +16,30 @@ body {
 }
 
 /* Styles for quiz landing page */
-#menu {
-    list-style-type: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    background-color: #ebb40f00;
+.topnav {
+    float: left;
+}
+
+.topnav a {
+    text-decoration: none;
+    padding: 20px 15px;
     font-family: 'Reenie Beanie', cursive;
     font-weight: bold;
     font-size: 22px;
+    border-radius: 2px;
+    text-transform: uppercase;
 }
 
-#menu a:hover {
+.topnav a:hover {
     background-color: #f5b505;
+
 }
 
-#menu>nav{
-    background-color: #f5b505;
+.topnav a.active {
+    color: white;
 }
+
+
 .container {
     background: url(..//images/backgroundchoice.jpg) no-repeat center center;
     background-size: cover;
@@ -48,7 +55,7 @@ body {
     padding: 20px 15px;
     border-radius: 2px;
     margin-top: 20px;
-    background-color: #ebb40f00;
+    background-color: #ebb40fc6;
     color: #fff;
     text-decoration: none;
     font-family: 'Reenie Beanie', cursive;
@@ -82,6 +89,22 @@ h3 {
     font-weight: bold;
 
 }
+
+h4 {
+    color: rgb(245, 235, 235);
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(9, 9, 9);
+}
+
 nav {
     background-color: #333;
 }
@@ -105,10 +128,11 @@ nav a:hover {
     background-color: rgb(109, 29, 29);
     color: black;
 }
+
 .quiz-container {
-    max-width: 500px;
+    max-width: 650px;
     margin: 20px auto;
-    background-color: #ffffff43;
+    background-color: #ffffff41;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -176,6 +200,24 @@ nav a:hover {
 
 .incorrectStyle {
     background-color: #f0230c;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-networks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-networks a {
+    color: rgb(133, 31, 31);
+    font-size: 30px;
+    margin-right: 15px;
 }
 
 /* Adding responsiveness to the play button */
