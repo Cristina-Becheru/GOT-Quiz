@@ -1,16 +1,14 @@
 # GAME OF THRONES QUIZ
 
-![] (assets/images/responsivepic.png)
-
 [Live Site](https://cristina-becheru.github.io/GOT-Quiz/)
 
-## TABLE OF CONTENT
 
 - [GAME OF THRONES QUIZ](#game-of-thrones-quiz)
-  - [TABLE OF CONTENT](#table-of-content)
   - [Project Overview](#project-overview)
   - [User Experience (UX)](#user-experience-ux)
       - [Client Goals](#client-goals)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
 
 ## Project Overview
 
@@ -28,3 +26,26 @@ By combining intriguing questions and interactive features, the Game of Thrones 
 - Offer users the opportunity to retry the movie quiz after receiving their final score
   
 - Deliver a seamless and user-friendly quiz interface that aligns with the Game of Thrones theme
+
+### Typography
+
+Chosen google fonts included three font families: Bree Serif, Libre Baskerville, and Reenie Beanie.
+These fonts offer a combination of modern, classic, and playful styles, providing versatility for different design elements within the quiz.
+
+### Imagery
+
+  The images serves as a visual representation or promotional material related to the show, creating a connection with the audience through familiar phrases and themes from the series.
+  Website contain an image for each page of the quiz.
+
+  - Landing page
+  ![Landing-page](assets/images/backgroundchoice.jpg)
+ 
+  - Quiz page
+  ![Quiz-page](assets/images/secondpage.jpg)
+
+  - Instructions page
+  ![Instructions-page](assets/images/howtoplaypicture.jpg)
+
+
+ - Favicon
+![Favicon](assets/favicon/favicon-32x32.png)
