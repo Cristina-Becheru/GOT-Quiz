@@ -34,6 +34,20 @@ By combining intriguing questions and interactive features, the Game of Thrones 
 - Offer users the opportunity to retry the movie quiz after receiving their final score
   
 - Deliver a seamless and user-friendly quiz interface that aligns with the Game of Thrones theme
+  
+## Design
+
+### Colours used
+
+- The chosen colors were picked to match with the background pictures ensuring an visually attractive design.
+
+- The color scheme for the headings included RGB values such as rgb(109, 29, 29), rgb(133, 31, 31), and rgb(245, 235, 235).
+
+- The buttons were styled using the color #e79c40f1.
+
+- To highlight correct answers, I applied the color #17e46c, and for incorrect answers, I used #f0230c.
+
+- The remaining colors used were black,white and grey (for container) to maintain a clean and straightforward aesthetic in alignment with the background pictures.
 
 ### Typography
 
@@ -63,7 +77,7 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 
 ## Actual Features
 
-- The homepage features two distinct buttons—one to commence the quiz and another to access instructions on how to play.
+- The landing page features two distinct buttons—one to commence the quiz and another to access instructions on how to play.
 - The instructions page provides a comprehensive guide on how to engage with the quiz. It outlines the rules, provides details on answering questions, and ensures that users have a clear understanding of the quiz mechanics before they start playing.
 - The quiz presents a series of questions with multiple-choice answers.Immediate visual feedback is given for each answer chosen, with correct answers turning green and incorrect answers turning red.
 - A scoring system is in place to let users know their performance relative to the total number of questions.
@@ -170,3 +184,15 @@ GitHub Pages:
 ### Code
 
 - [W3Schools](https://www.w3schools.com/) -Was a valuable resource in understanding JavaScript
+  
+- Youtube tutorials were also used.These tutorials were instrumental in helping me understand how to effectively use JavaScript in the development of the quiz.
+
+  - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1450s&ab_channel=WebDevSimplified)
+  
+  - [Kevin Briggs](https://www.youtube.com/watch?v=C7NsIRhoWuE)
+
+  - [James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&ab_channel=JamesQQuick)
+
+- The quiz questions were sourced from a trivia database.
+  
+  - [Trivia](https://www.usefultrivia.com/tv_trivia/game_of_thrones_trivia_ii.html)
