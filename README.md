@@ -98,7 +98,7 @@ The quiz was tested on different web browsers such as [Google Chrome](https://ww
 
 The W3C Markup Validation Result was used to verify the conformity and correctness of HTML code. On the initial examination of the 'how to play' page I have found a minor errors, which I addressed by adding a closing div.The rest of the pages were checked and no errors were found.
 
-![W3C Validation Error Messages](assetse/imageserrorhowtoplay.png)
+![W3C Validation Error Messages](assets/images/errorhowtoplay.png)
 
 #### W3C CSS Validation Result
 
@@ -107,6 +107,10 @@ The W3C Markup Validation Result was used to verify the conformity and correctne
 ![cssvalidation](assets/images/cssvalidationn.png)
 
 #### JSHint
+
+- JSHint helped to find the errors in my script file.Minor errors were found such as 'Missing semicolon' and 'Unnecessary semicolon' and were fixed by adding or removing the semicolons.
+
+![jshintvalidation](assets/images/jshint.png)
 
 ## LightHouse report
 
@@ -152,10 +156,17 @@ GitHub Pages:
 3.Select the destination where you want to fork the repository.
 
 4.After forking is complete, you'll be redirected to your forked repository.
-#### Cloning a Repository:
+
+#### Cloning a Repository
 
 1.On the GitHub repository page, click on the "Code" button and copy the repository URL provided.
 
 2.Open your terminal and navigate to the directory where you want to clone the repository.
 
 3.Use the 'git clone' command followed by the repository URL you copied and press 'Enter'
+
+## Credits
+
+### Code
+
+- [W3Schools](https://www.w3schools.com/) -Was a valuable resource in understanding JavaScript
