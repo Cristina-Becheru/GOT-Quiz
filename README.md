@@ -96,9 +96,21 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 ## Actual Features
 
 - The landing page features two distinct buttons—one to commence the quiz and another to access instructions on how to play.
+  
+ ![](assets/images/homepage.png)
+
 - The instructions page provides a comprehensive guide on how to engage with the quiz. It outlines the rules, provides details on answering questions, and ensures that users have a clear understanding of the quiz mechanics before they start playing.
+  
+  ![#](assets/images/instructpage.png)
+
 - The quiz presents a series of questions with multiple-choice answers.Immediate visual feedback is given for each answer chosen, with correct answers turning green and incorrect answers turning red.
+  
+  ![#](assets/images/questions.png)
+
 - A scoring system is in place to let users know their performance relative to the total number of questions.
+  
+  ![#](assets/images/score.png)
+  
 - The quiz ensure a responsive design that caters to users accessing the quiz from various devices, enhancing accessibility and user satisfaction.
 
 ## Upcoming Features
