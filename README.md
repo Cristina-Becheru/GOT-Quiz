@@ -46,12 +46,15 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   Website contain an image for each page of the quiz.
 
 - Landing page
+-
   ![Landing-page](assets/images/backgroundchoice.jpg)
 
 - Quiz page
+-
   ![Quiz-page](assets/images/secondpage.jpg)
 
 - Instructions page
+-
   ![Instructions-page](assets/images/howtoplaypicture.jpg)
 
 - Favicon
@@ -89,12 +92,8 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 
 ## Testing and Accesibility
   
-The quiz was tested on the browsers listed below to ensure responsiveness and error-free performance.
+The quiz was tested on different web browsers such as [Google Chrome](https://www.google.com/chrome/),[Microsoft edge](https://www.microsoft.com/en-us/edge?form=MA13L0), and [Safari](https://www.apple.com/safari/) to ensure it works consistently across platforms.
 
-- [Google Chrome](https://www.google.com/chrome/)
-- [Microsoft edge](https://www.microsoft.com/en-us/edge?form=MA13L0)
-- [Safari](https://www.apple.com/safari/)
-  
 #### W3C Markup Validation Result
 
 The W3C Markup Validation Result was used to verify the conformity and correctness of HTML code. On the initial examination of the 'how to play' page I have found a minor errors, which I addressed by adding a closing div.The rest of the pages were checked and no errors were found.
@@ -112,10 +111,51 @@ The W3C Markup Validation Result was used to verify the conformity and correctne
 ## LightHouse report
 
 ### Landing page score
+
 ![landing-page](assets/images/landingpage.png)
 
 ### 'How to play' page score
+
 ![how-to-play](assets/images/lighthowtop.png)
 
 ### Quiz page score
+
 ![quiz](assets/images/quizpage.png)
+
+### Manual testing
+
+- The quiz was tested on different devices to verify its responsiveness.
+- The user interface elements, such as buttons, question displays, and answer options, were tested to ensure they function as expected.
+- The correctness of the answer evaluation mechanism was verified by selecting correct and incorrect answers to questions.
+- The functionality of restarting the quiz after completion was tested to ensure that it effectively resets the quiz state, allowing users to play again.
+- The quiz aimed for simplicity, with the navigation bar replaced by a straightforward click on the main title, allowing users to return to the landing page.
+- Social media links demonstrate responsiveness and operate as intended.
+
+### Deployment
+
+GitHub Pages:
+
+1.Choose the project repository you wish to deploy in your repository section.
+
+2.Scroll down to the "GitHub Pages" section in the Settings and select the branch you want to use for deployment.
+
+3.Save the changes, and GitHub Pages will automatically build and deploy your project.
+
+4.Once the deployment is complete, you'll see a link to your deployed site in the "GitHub Pages" section.
+
+#### Forking a Repository
+
+1.Log in to GitHub and locate the repository that you want to fork.
+
+2.Click on the 'Fork' button found on the top right of the repository page.
+
+3.Select the destination where you want to fork the repository.
+
+4.After forking is complete, you'll be redirected to your forked repository.
+#### Cloning a Repository:
+
+1.On the GitHub repository page, click on the "Code" button and copy the repository URL provided.
+
+2.Open your terminal and navigate to the directory where you want to clone the repository.
+
+3.Use the 'git clone' command followed by the repository URL you copied and press 'Enter'
