@@ -9,14 +9,26 @@
 - [Project Overview](#project-overview)
 - [User Experience (UX)](#user-experience-ux)
   - [Client Goals](#client-goals)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
+  - [Design](#design)
+    - [Colours Used](#colours-used)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
 - [Actual Features](#actual-features)
 - [Upcoming Features](#upcoming-features)
 - [Technologies Used](#technologies-used)
   - [Languages, Frameworks, Libraries \& Programs Used](#languages-frameworks-libraries--programs-used)
   - [Testing and Accesibility](#testing-and-accesibility)
     - [W3C Markup Validation Result](#w3c-markup-validation-result)
+    - [W3C CSS Validation Result](#w3c-css-validation-result)
+    - [JSHint](#jshint)
+    - [Lighthouse](#lighthouse-report)
+    - [Manual testing](#manual-testing)
+- [Deployment](#deployment)
+    - [Forking a Repository](#forking-a-repository)
+    - [Cloning a Repository](#cloning-a-repository)
+- [Credits](#credits)
+  - [Code](#code)
+-  [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
@@ -60,15 +72,15 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   Website contain an image for each page of the quiz.
 
 - Landing page
--
+
   ![Landing-page](assets/images/backgroundchoice.jpg)
 
 - Quiz page
--
+
   ![Quiz-page](assets/images/secondpage.jpg)
 
 - Instructions page
--
+
   ![Instructions-page](assets/images/howtoplaypicture.jpg)
 
 - Favicon
@@ -103,6 +115,8 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   - [Google Fonts](https://fonts.google.com/) |  Utilized to import the fonts featured on the website.
   - [Am I Responsive?](https://ui.dev/amiresponsive?) | Used to present the website's responsiveness across various devices.
   - [JSHint](https://jshint.com/) | Used to detect errors and potential issues in my JavaScript code.
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) | used to check the validity of my CSS code.
+  - [W3C Markup Validator](https://validator.w3.org/) | used to check  my HTML code.
 
 ## Testing and Accesibility
   
