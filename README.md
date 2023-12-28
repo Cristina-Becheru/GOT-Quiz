@@ -97,9 +97,10 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 
 - The landing page features two distinct buttons—one to commence the quiz and another to access instructions on how to play.
   
- ![](assets/images/homepage.png)
+ ![#](assets/images/homepage.png)
 
 - The instructions page provides a comprehensive guide on how to engage with the quiz. It outlines the rules, provides details on answering questions, and ensures that users have a clear understanding of the quiz mechanics before they start playing.
+- The title 'Game of Thrones' serves as a navigation bar, allowing users to return to the home page.
   
   ![#](assets/images/instructpage.png)
 
@@ -109,8 +110,10 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 
 - A scoring system is in place to let users know their performance relative to the total number of questions.
   
-  ![#](assets/images/score.png)
+- The social media links in the quiz's footer provide users with easy access to my social network platforms.
   
+  ![#](assets/images/score.png)
+
 - The quiz ensure a responsive design that caters to users accessing the quiz from various devices, enhancing accessibility and user satisfaction.
 
 ## Upcoming Features
