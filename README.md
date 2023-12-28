@@ -124,6 +124,8 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) | used to check the validity of my CSS code.
   - [W3C Markup Validator](https://validator.w3.org/) | used to check  my HTML code.
   - [Font Awesome](https://fontawesome.com/icons) | used to integrate my social networks icons in the quiz.
+  
+  - [ColorsWall](https://colorswall.com/) | Used to create a color pallete to match the background pictures
 
 ## Testing and Accesibility
   
@@ -221,6 +223,8 @@ GitHub Pages:
 - Images used in the quiz were downloaded from [Alpha Coders](https://alphacoders.com/game-of-thrones-wallpapers) and re-sized with [Imagelr](https://imagelr.com/).
 
 - The footer code was adjusted based on the information from  [W3schools](https://www.w3schools.com/tags/tag_footer.asp).
+
+- The concept of the multi-page quiz was inspired by [Luis Vegas](https://luisvegas88.github.io/QuizJavaScript/start.html)
 
 ### Acknowledgments
 
