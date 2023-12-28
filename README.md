@@ -24,11 +24,11 @@
     - [Lighthouse](#lighthouse-report)
     - [Manual testing](#manual-testing)
 - [Deployment](#deployment)
-    - [Forking a Repository](#forking-a-repository)
-    - [Cloning a Repository](#cloning-a-repository)
+  - [Forking a Repository](#forking-a-repository)
+  - [Cloning a Repository](#cloning-a-repository)
 - [Credits](#credits)
   - [Code](#code)
--  [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
@@ -53,13 +53,19 @@ By combining intriguing questions and interactive features, the Game of Thrones 
 
 - The chosen colors were picked to match with the background pictures ensuring an visually attractive design.
 
-- The color scheme for the headings included RGB values such as rgb(109, 29, 29), rgb(133, 31, 31), and rgb(245, 235, 235).
+- The color scheme for the headings included RGB values such as rgb(109, 29, 29), rgb(133, 31, 31),rgb(245, 235, 235) and RGB(0, 0, 0).
+  
+  ![heading-colours](assets/images/heading.png)
 
 - The buttons were styled using the color #e79c40f1.
+  
+  ![buttons-color](assets/images/buttons.png)
 
 - To highlight correct answers, I applied the color #17e46c, and for incorrect answers, I used #f0230c.
 
-- The remaining colors used were black,white and grey (for container) to maintain a clean and straightforward aesthetic in alignment with the background pictures.
+![answers-colors](assets/images/answers.png)
+
+- The remaining colors used were white and grey (for container) to maintain a clean and straightforward aesthetic in alignment with the background pictures.
 
 ### Typography
 
@@ -117,6 +123,7 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   - [JSHint](https://jshint.com/) | Used to detect errors and potential issues in my JavaScript code.
   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) | used to check the validity of my CSS code.
   - [W3C Markup Validator](https://validator.w3.org/) | used to check  my HTML code.
+  - [Font Awesome](https://fontawesome.com/icons) | used to integrate my social networks icons in the quiz.
 
 ## Testing and Accesibility
   
@@ -210,3 +217,11 @@ GitHub Pages:
 - The quiz questions were sourced from a trivia database.
   
   - [Trivia](https://www.usefultrivia.com/tv_trivia/game_of_thrones_trivia_ii.html)
+
+- Images used in the quiz were downloaded from [Alpha Coders](https://alphacoders.com/game-of-thrones-wallpapers) and re-sized with [Imagelr](https://imagelr.com/).
+
+- The footer code was adjusted based on the information from  [W3schools](https://www.w3schools.com/tags/tag_footer.asp).
+
+### Acknowledgments
+
+- A heartfelt thank you to my mentor,Harry Dhillon whose guidance and support have been invaluable throughout this project.
