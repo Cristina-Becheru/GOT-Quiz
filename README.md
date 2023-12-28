@@ -1,21 +1,22 @@
 # GAME OF THRONES QUIZ
 
-![amiresponsive](https://ui.dev/amiresponsive?url=https://cristina-becheru.github.io/GOT-Quiz/)
+![amiresponsive](assets/images/responsivepic.png)
 
 [Live Site](https://cristina-becheru.github.io/GOT-Quiz/)
 
-- [GAME OF THRONES QUIZ](#game-of-thrones-quiz)
-  - [Project Overview](#project-overview)
-  - [User Experience (UX)](#user-experience-ux)
-      - [Client Goals](#client-goals)
-    - [Typography](#typography)
-    - [Imagery](#imagery)
-  - [Actual Features](#actual-features)
-  - [Upcoming Features](#upcoming-features)
-  - [Technologies Used](#technologies-used)
-    - [Languages, Frameworks, Libraries \& Programs Used](#languages-frameworks-libraries--programs-used)
+## TABLE OF CONTENT
+
+- [Project Overview](#project-overview)
+- [User Experience (UX)](#user-experience-ux)
+  - [Client Goals](#client-goals)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+- [Actual Features](#actual-features)
+- [Upcoming Features](#upcoming-features)
+- [Technologies Used](#technologies-used)
+  - [Languages, Frameworks, Libraries \& Programs Used](#languages-frameworks-libraries--programs-used)
   - [Testing and Accesibility](#testing-and-accesibility)
-      - [W3C Markup Validation Result](#w3c-markup-validation-result)
+    - [W3C Markup Validation Result](#w3c-markup-validation-result)
 
 ## Project Overview
 
@@ -54,6 +55,7 @@ These fonts offer a combination of modern, classic, and playful styles, providin
   ![Instructions-page](assets/images/howtoplaypicture.jpg)
 
 - Favicon
+  
 ![Favicon](assets/favicon/apple-touch-icon.png)
 
 ## Actual Features
@@ -87,7 +89,7 @@ These fonts offer a combination of modern, classic, and playful styles, providin
 
 ## Testing and Accesibility
   
-The quiz was tested on various browsers to ensure responsiveness and error-free performance.
+The quiz was tested on the browsers listed below to ensure responsiveness and error-free performance.
 
 - [Google Chrome](https://www.google.com/chrome/)
 - [Microsoft edge](https://www.microsoft.com/en-us/edge?form=MA13L0)
@@ -95,5 +97,25 @@ The quiz was tested on various browsers to ensure responsiveness and error-free 
   
 #### W3C Markup Validation Result
 
-The W3C Markup Validation Result was used to verify the conformity and correctness of HTML code. On the initial examination of the 'how to play' page I have found a minor errors, which I addressed by adding a closing div.
-![W3C Validation Error Messages]()
+The W3C Markup Validation Result was used to verify the conformity and correctness of HTML code. On the initial examination of the 'how to play' page I have found a minor errors, which I addressed by adding a closing div.The rest of the pages were checked and no errors were found.
+
+![W3C Validation Error Messages](assetse/imageserrorhowtoplay.png)
+
+#### W3C CSS Validation Result
+
+- The CSS validation process confirmed that the stylesheet contains no errors.
+
+![cssvalidation](assets/images/cssvalidationn.png)
+
+#### JSHint
+
+## LightHouse report
+
+### Landing page score
+![landing-page](assets/images/landingpage.png)
+
+### 'How to play' page score
+![how-to-play](assets/images/lighthowtop.png)
+
+### Quiz page score
+![quiz](assets/images/quizpage.png)
